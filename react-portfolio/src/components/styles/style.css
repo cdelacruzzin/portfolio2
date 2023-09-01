@@ -9,26 +9,5 @@
     min-height: 100vh; /* this ensures that it covers the full viewport */
     display: flex;
     flex-direction: column;
+    overflow: visible;  
   }
-  
-  /* .nav {
-    position: sticky;
-    background-color: rgb(43, 185, 69);
-    margin-top: 4rem;
-    width: 50%;
-    height: 4em;
-    align-self: flex-end;
-    align-content: center;
-  }
-  .nav-item {
-    background-color: red;
-    width: 12rem;
-    border: 3px solid black;
-    margin-left: 4rem;
-    height: 100%;  /* Add this */
-  /* }
-  
-  .nav-item p {
-    color: white;
-    font-size: 2em;
-  } */

@@ -12,14 +12,14 @@ function NavTabs({ currentPage, handlePageChange }) {
 
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-light ">
-      <button className="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" onClick={handleNavCollapse}>
+   <nav className="navbar navbar-expand-lg navbar-light">
+      <button className="navbar-toggler bg-light mb-4" type="button" onClick={handleNavCollapse}>
         <span className="navbar-toggler-icon"></span>
       </button>
-
-      <div className={`${isNavCollapsed ? 'collapse' : ''} navbar-collapse`} id="navbarNav">
-        <ul className= {`${!isNavCollapsed ? 'd-flex flex-column' : ''} nav nav-tabs`}>
-          <li className="nav-item">
+      
+      <div className={`${isNavCollapsed ? 'collapse' : ''} navbar-collapse px-2 `} id="navbarNav">
+        <ul className={`${!isNavCollapsed ? 'd-flex flex-column' : ''} nav nav-tabs bg-dark`}>
+           <li className="nav-item">
             <a
               href="#home"
               onClick={() => handlePageChange('Home')}
