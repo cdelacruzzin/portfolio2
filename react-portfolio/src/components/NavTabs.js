@@ -1,9 +1,12 @@
 import React from 'react';
 
+
 // TODO: Add a comment explaining how we are able to extract the key value pairs from props
 
 function NavTabs({ currentPage, handlePageChange }) {
   return (
+
+
     <ul className="nav nav-tabs">
       <li className="nav-item">
         <a
@@ -50,6 +53,7 @@ function NavTabs({ currentPage, handlePageChange }) {
         </a>
       </li>
     </ul>
+
   );
 }
 
