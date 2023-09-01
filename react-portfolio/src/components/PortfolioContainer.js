@@ -18,7 +18,7 @@ export default function PortfolioContainer() {
 
   const handlePageChange = (page) => setCurrentPage(page);
   return (
-    <div className="background-svg text-light" >
+    <div className="background-svg text-light " >
       {/* We are passing the currentPage from state and the function to update it */}
       <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
       {/* Here we are calling the renderPage method which will return a component  */}
