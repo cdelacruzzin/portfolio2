@@ -1,4 +1,3 @@
-
 .background-svg {
     background-image: url('../images/bgImage.svg');
     background-size: cover;
@@ -6,8 +5,58 @@
     background-repeat: repeat;
     width: 100%;
     height: 100vh;
-    min-height: 100vh; /* this ensures that it covers the full viewport */
+    min-height: 100vh;
+    /* this ensures that it covers the full viewport */
     display: flex;
     flex-direction: column;
-    overflow: visible;  
-  }
+    overflow: visible;
+}
+header{
+    background-image: url('../images/headerImg.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+
+}
+
+#navbar-container{
+    justify-content: space-between;
+
+}
+.nav-tabs {
+    width: 50%;
+    align-self: center;
+    justify-content: center;
+}
+#navbarNav {
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.nav-item {
+    width: 25%;
+}
+.nav-item a {
+    color: red;
+    text-align: center;
+    text-decoration: solid;
+    font-weight: bold; 
+    font-size: larger;
+    min-width: fit-content;
+}
+
+.name-box{
+
+    border-radius: 25px;  /* Adjust the radius as per your requirements */
+
+    width:auto;
+    height:auto ;
+    
+}
+.name-box p{
+    color: red;
+    text-align: center;
+    text-decoration: solid;
+    font-weight: bold; 
+    font-size:xx-large;
+}
