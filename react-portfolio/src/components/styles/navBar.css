@@ -1,5 +1,6 @@
 .background-svg {
-    background-image: url('../images/bgImage.svg');
+    /* background-image: url('../images/bgImage.svg'); */
+    background-color: #19181d !important;
     background-size: cover;
     background-position: center;
     background-repeat: repeat;
@@ -16,7 +17,6 @@ header{
     background-size: cover;
     background-position: center;
     background-repeat: repeat;
-
 }
 
 #navbar-container{

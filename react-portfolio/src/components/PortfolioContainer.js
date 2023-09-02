@@ -4,7 +4,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Blog from './pages/Blog';
 import Contact from './pages/Contact';
-import './styles/style.css';
+import './styles/navBar.css';
 
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState('Home');

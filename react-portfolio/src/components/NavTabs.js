@@ -1,5 +1,5 @@
 import { React, useState } from 'react';
-import './styles/style.css'
+import './styles/navBar.css'
 
 function NavTabs({ currentPage, handlePageChange }) {
 
