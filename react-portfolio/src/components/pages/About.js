@@ -1,16 +1,18 @@
-import React from 'react';
+import {React, useState, useEffect} from 'react';
 import '../styles/about.css'
-import react from '../images/skillIcons/React-icon.svg'
+import react from '../images/skillIcons/React-icon.svg';
+import html from '../images/skillIcons/HTML.svg';
+import css from '../images/skillIcons/css.svg';
 
 export default function About() {
   return (
     <div className='p-5 '>
       <div className='row mb-5'>
         <div className='col-md-3'>
-          <div className='bg-light'>a</div>
+
         </div>
-        <div className='col-md-6 bg-dark'>
-          <div className="bg-light text-dark h-100 d-flex flex-column align-items-center">
+        <div className='col-md-6'>
+          <div className="text-light h-100 d-flex flex-column align-items-center">
             <div className="vertical-line"></div>
             <h6 className="mt-3">ABOUT ME</h6>
             <h2>Just a bit...</h2>
@@ -32,7 +34,6 @@ export default function About() {
           </div>
         </div>
         <div className='col-md-3'>
-          <div className='bg-light'>a</div>
         </div>
       </div>
 
@@ -44,11 +45,11 @@ export default function About() {
             <h5 className='bg-light'>HTML</h5>
           </div>
           <div className="col-md-2 col-sm-4 col-12 skill bg-dark text-dark d-flex justify-content-center align-items-center flex-column m-2 pt-2">
-            <img src={react}></img>
+            <img src={html}></img>
             <h5 className='bg-light'>CSS</h5>
           </div>
           <div className="col-md-2 col-sm-4 col-12 skill bg-dark text-dark d-flex justify-content-center align-items-center flex-column m-2 pt-2">
-            <img src={react}></img>
+            <img src={css}></img>
             <h5 className='bg-light'>JavaScript</h5>
           </div>
           <div className="col-md-2 col-sm-4 col-12 skill bg-dark text-dark d-flex justify-content-center align-items-center flex-column m-2 pt-2">

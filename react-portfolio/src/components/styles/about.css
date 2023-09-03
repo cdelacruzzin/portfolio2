@@ -1,12 +1,12 @@
 .container{
-    background-color: red;
+  background-color: #19181d !important;
 }
 .row{
-    background-color: blue;
+  /* background-color: #19181d !important; */
 }
 .vertical-line {
     content: '';
-    width: 2px;
+    width: 3px;
     height: 5rem;
     background: #909294;
     margin-top: 10px;  /* Optional: You can set this to position it better */
