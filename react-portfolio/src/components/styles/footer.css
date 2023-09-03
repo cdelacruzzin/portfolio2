@@ -7,9 +7,11 @@ footer{
     padding: 3rem 5rem 3rem 5rem;
 
 }
-section{
-    background-color: red;
-}
 aside{
     /* background-color: blue; */
+    min-width: fit-content;
+}
+#footer-ul{
+    width: 100%;
+
 }
