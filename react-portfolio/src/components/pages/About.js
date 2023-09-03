@@ -5,6 +5,23 @@ import html from '../images/skillIcons/HTML.svg';
 import css from '../images/skillIcons/css.svg';
 
 export default function About() {
+
+  const [icon, setIcon] = useState({});
+
+  useEffect( ()=> {
+    const iconArr = ['css', 'express','git','github','HTML','js','mern','mongodb','mysql','node','npm','React-icon'];
+    const temp = {}
+
+    iconArr.forEach((iconEl)=>{
+      temp[iconEl] = require(`../images/skillIcons/${iconEl}.svg`);
+    });
+
+    setIcon(temp);
+    
+  },[]);
+
+
+
   return (
     <div className='p-5 '>
       <div className='row mb-5'>
