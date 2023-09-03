@@ -1,28 +1,21 @@
 .background-svg {
-    /* background-image: url('../images/bgImage.svg'); */
-    background-color: #19181d !important;
+    background-image: url('../images/headerImg.svg');
+
     background-size: cover;
     background-position: center;
     background-repeat: repeat;
     width: 100%;
-    height: 100vh;
-    min-height: 100vh;
-    /* this ensures that it covers the full viewport */
-    display: flex;
-    flex-direction: column;
-    overflow: visible;
+    height: 100%;
 }
 header{
-    background-image: url('../images/headerImg.svg');
+    /* background-image: url('../images/headerImg.svg'); */
+
+    background-color: #19181d !important;
     background-size: cover;
     background-position: center;
     background-repeat: repeat;
 }
 
-#navbar-container{
-    justify-content: space-between;
-
-}
 .nav-tabs {
     width: 50%;
     align-self: center;
@@ -46,7 +39,6 @@ header{
 }
 
 .name-box{
-
     border-radius: 25px;  /* Adjust the radius as per your requirements */
 
     width:auto;

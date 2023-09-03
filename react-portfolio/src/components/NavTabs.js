@@ -8,8 +8,8 @@ function NavTabs({ currentPage, handlePageChange }) {
   const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
   return (
 
-    <header className='p-3'>
-      <nav className="navbar navbar-expand-lg navbar-light" id='navbar-container'>
+    <header className='p-3 sticky-top'>
+      <nav className="  navbar navbar-expand-lg navbar-light" id='navbar-container'>
         <button className="navbar-toggler bg-light mb-4 " type="button" onClick={handleNavCollapse}>
           <span className="navbar-toggler-icon"></span>
         </button>

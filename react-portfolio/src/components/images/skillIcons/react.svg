@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 361">
+    <!-- Background -->
+    <rect width="256" height="361" rx="50.6" fill="#E44D26"/>
+    <!-- Foreground -->
+    <polygon points="127.8 0 23.5 360.9 232.2 360.9 191 308.7 127.8 337.8 64.7 308.7 56.2 278.7 115.3 304.1 127.8 299.8 140.2 304.1 199.4 278.7 191 308.7 127.8 337.8 0 361 0 0 255.9 0 232.2 360.9" fill="#FFF"/>
+    <!-- Text -->
+    <text x="75" y="180" font-family="Verdana" font-size="45" fill="#E44D26">HTML5</text>
+</svg>
