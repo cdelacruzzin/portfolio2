@@ -1,33 +1,26 @@
-import {React, useState, useEffect} from 'react';
-import '../styles/about.css'
-import react from '../images/skillIcons/React-icon.svg';
-import html from '../images/skillIcons/HTML.svg';
-import css from '../images/skillIcons/css.svg';
+import { React, useState, useEffect } from 'react';
+import '../styles/about.css';
 
 export default function About() {
 
-  const [icon, setIcon] = useState({});
-
-  useEffect( ()=> {
-    const iconArr = ['css', 'express','git','github','HTML','js','mern','mongodb','mysql','node','npm','React-icon'];
-    const temp = {}
-
-    iconArr.forEach((iconEl)=>{
-      temp[iconEl] = require(`../images/skillIcons/${iconEl}.svg`);
-    });
-
-    setIcon(temp);
-    
-  },[]);
 
 
+  const iconArr = ['css', 'express', 'git', 'github', 'HTML', 'js', 'mern', 'mongodb', 'mysql', 'node', 'npm', 'react'];
+  const imgsrc = {}
+
+  iconArr.forEach((icon) => imgsrc[icon] = require(`../images/skillIcons/${icon}.svg`));
+
+  const setDivs = iconArr
+    .map((icon, index) =>
+      <div key={index} className='col-md-2 col-sm-4 col-12 skill bg-light text-dark d-flex justify-content-center align-items-center flex-column m-2 pt-2'>
+        <img src={imgsrc[icon]} alt={icon}></img>
+        <h5>{icon}</h5>
+      </div>
+    );
 
   return (
     <div className='p-5 '>
-      <div className='row mb-5'>
-        <div className='col-md-3'>
-
-        </div>
+      <div className='d-flex justify-content-center mb-5'>
         <div className='col-md-6'>
           <div className="text-light h-100 d-flex flex-column align-items-center">
             <div className="vertical-line"></div>
@@ -50,70 +43,12 @@ export default function About() {
             <div className='horizontal-line rounded-box'></div>
           </div>
         </div>
-        <div className='col-md-3'>
-        </div>
       </div>
 
       <div className='container'>
         <div className="row d-flex justify-content-center">
-
-          <div className="col-md-2 col-sm-4 col-12 skill bg-dark text-dark d-flex justify-content-center align-items-center flex-column m-2 pt-2">
-            <img src={react}></img>
-            <h5 className='bg-light'>HTML</h5>
-          </div>
-          <div className="col-md-2 col-sm-4 col-12 skill bg-dark text-dark d-flex justify-content-center align-items-center flex-column m-2 pt-2">
-            <img src={html}></img>
-            <h5 className='bg-light'>CSS</h5>
-          </div>
-          <div className="col-md-2 col-sm-4 col-12 skill bg-dark text-dark d-flex justify-content-center align-items-center flex-column m-2 pt-2">
-            <img src={css}></img>
-            <h5 className='bg-light'>JavaScript</h5>
-          </div>
-          <div className="col-md-2 col-sm-4 col-12 skill bg-dark text-dark d-flex justify-content-center align-items-center flex-column m-2 pt-2">
-            <img src={react}></img>
-            <h5 className='bg-light'>React</h5>
-          </div>
-          <div className="col-md-2 col-sm-4 col-12 skill bg-dark text-dark d-flex justify-content-center align-items-center flex-column m-2 pt-2">
-            <img src={react}></img>
-            <h5 className='bg-light'>Node.js</h5>
-          </div>
-
-          <div className="col-md-2 col-sm-4 col-12 skill bg-dark text-dark d-flex justify-content-center align-items-center flex-column m-2 pt-2">
-            <img src={react}></img>
-            <h5 className='bg-light'>Express.jss</h5>
-          </div>
-
-          <div className="col-md-2 col-sm-4 col-12 skill bg-dark text-dark d-flex justify-content-center align-items-center flex-column m-2 pt-2">
-            <img src={react}></img>
-            <h5 className='bg-light'>MySQL</h5>
-          </div>
-
-          <div className="col-md-2 col-sm-4 col-12 skill bg-dark text-dark d-flex justify-content-center align-items-center flex-column m-2 pt-2">
-            <img src={react}></img>
-            <h5 className='bg-light'>NoSQL</h5>
-          </div>
-          <div className="col-md-2 col-sm-4 col-12 skill bg-dark text-dark d-flex justify-content-center align-items-center flex-column m-2 pt-2">
-            <img src={react}></img>
-            <h5 className='bg-light'>MongoDB</h5>
-          </div>
-
-          <div className="col-md-2 col-sm-4 col-12 skill bg-dark text-dark d-flex justify-content-center align-items-center flex-column m-2 pt-2">
-            <img src={react}></img>
-            <h5 className='bg-light'>NPM</h5>
-          </div>
-
-          <div className="col-md-2 col-sm-4 col-12 skill bg-dark text-dark d-flex justify-content-center align-items-center flex-column m-2 pt-2">
-            <img src={react}></img>
-            <h5 className='bg-light'>Git</h5>
-          </div>
-
-          <div className="col-md-2 col-sm-4 col-12 skill bg-dark text-dark d-flex justify-content-center align-items-center flex-column m-2 pt-2">
-            <img src={react}></img>
-            <h5 className='bg-light'>GitHub</h5>
-          </div>
-
+          {setDivs}
         </div>
-
       </div>
     </div>
   );
