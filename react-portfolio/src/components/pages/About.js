@@ -44,7 +44,6 @@ export default function About() {
           </div>
         </div>
       </div>
-
       <div className='container'>
         <div className="row d-flex justify-content-center">
           {setDivs}

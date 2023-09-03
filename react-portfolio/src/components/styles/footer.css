@@ -1,0 +1,15 @@
+footer{
+    background-color: #19181d !important;
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    height: 20rem;
+    padding: 3rem 5rem 3rem 5rem;
+
+}
+section{
+    background-color: red;
+}
+aside{
+    /* background-color: blue; */
+}

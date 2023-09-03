@@ -61,9 +61,6 @@ function NavTabs({ currentPage, handlePageChange }) {
             Carlos Rafael Dela Cruz
           </p>
         </div>
-
-
-
       </nav>
 
 
