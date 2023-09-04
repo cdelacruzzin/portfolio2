@@ -15,3 +15,7 @@ aside{
     width: 100%;
 
 }
+.img-links a{
+    background-color: red;
+    margin: 1%;
+}

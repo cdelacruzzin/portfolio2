@@ -1,10 +1,15 @@
-import { React, useState } from 'react';
+import { React} from 'react';
+import { useSpring, animated } from 'react-spring';
 import './styles/footer.css'
 import github from './images/skillIcons/githubwhite.svg';
 import linkedin from './images/skillIcons/linkedin.svg';
 
 function Footer({ currentPage, handlePageChange }) {
 
+    const fadeStyles = useSpring({
+        opacity: 1,
+        from: { opacity: 0 }
+      });
 
     return (
         <footer className=' mt-5 row'>
@@ -71,6 +76,8 @@ function Footer({ currentPage, handlePageChange }) {
             </section>
 
             <p className='text-center text-light mt-4'> &copy; Carlos' Portfolio 2023</p>
+
+            
 
         </footer>
     );
