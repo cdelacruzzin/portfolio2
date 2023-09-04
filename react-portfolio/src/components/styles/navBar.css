@@ -6,9 +6,16 @@ header{
     background-size: cover;
     background-position: center;
     background-repeat: repeat;
-
 }
+.navbar-toggler {
+    border: 2px solid #fff;
+    background-color: white;
+  }
 
+  .navbar-toggler-icon {
+    color: #fff;
+    font-size: 1.5rem;
+  }
 .nav-tabs {
     width: 50%;
     align-self: center;
