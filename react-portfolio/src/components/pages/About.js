@@ -38,10 +38,10 @@ const handleHoverOut = (event) => handleHoverAction(event, 1);
     <div className='p-5 '>
       <div className='d-flex justify-content-center '>
         <div className='col-md-6'>
-          <div className="text-light h-100 d-flex flex-column align-items-center">
+          <div className=" h-100 d-flex flex-column align-items-center">
             <div className="vertical-line"></div>
-            <h6 className="mt-3">ABOUT ME</h6>
-            <h2>Just a bit...</h2>
+            <h2 className="mt-3 heading">ABOUT ME</h2>
+            <h2 className='heading'>Just a bit...</h2>
             <p className='text-center'>
               Donec a volutpat quam. Curabitur nec varius justo, sed rutrum ligula.
               Curabitur pellentesque turpis sit amet eros iaculis, a mollis arcu
@@ -55,7 +55,7 @@ const handleHoverOut = (event) => handleHoverAction(event, 1);
               sed pretium risus rutrum eget. Nam consequat, ligula in faucibus
             </p>
             <div className="vertical-line"></div>
-            <h2>My Skillset</h2>
+            <h2 className='heading'>My Skillset</h2>
             <div className='horizontal-line rounded-box'></div>
           </div>
         </div>
