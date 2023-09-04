@@ -35,7 +35,7 @@ const handleHoverOut = (event) => handleHoverAction(event, 1);
 
     
   return (
-    <div className='p-5 '>
+    <main className='p-5 '>
       <div className='d-flex justify-content-center mb-5'>
         <div className='col-md-6'>
           <div className="text-light h-100 d-flex flex-column align-items-center">
@@ -65,6 +65,6 @@ const handleHoverOut = (event) => handleHoverAction(event, 1);
           {setDivs}
         </div>
       </div>
-    </div>
+    </main>
   );
 }
