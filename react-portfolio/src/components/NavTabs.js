@@ -10,7 +10,7 @@ function NavTabs({ currentPage, handlePageChange }) {
 
     <header className='p-3 sticky-top'>
       <nav className="  navbar navbar-expand-lg navbar-light" id='navbar-container'>
-        <button className="navbar-toggler bg-light mb-4 " type="button" onClick={handleNavCollapse}>
+        <button className="navbar-toggler mb-4 " type="button" onClick={handleNavCollapse}>
           <span className="navbar-toggler-icon"></span>
         </button>
 

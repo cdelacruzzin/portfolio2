@@ -1,4 +1,6 @@
-.vertical-line {
+
+
+.vertical-line{
     content: '';
     width: 3px;
     height: 5rem;
@@ -13,14 +15,14 @@
     background: #909294;
     border-radius: 10px;
   }
+.skill{
+  height: 10rem;
+}
 
 
-  .skill{
-    height:10rem;
-    width: 10rem;
-  }
 
   .skill img{
     width: 4rem;
+    height: 4rem;
     object-fit: fill;
   }
