@@ -49,7 +49,7 @@ function Footer({ currentPage, handlePageChange }) {
 
 
             <aside className='col-lg-4 col-12'>
-                <h4 className='text-light fs-1 d-flex justify-content-center'>Carlos Dela Cruz</h4>
+                <h4 className=' fs-1 d-flex justify-content-center'>Carlos Dela Cruz</h4>
                 <div className='img-links d-flex justify-content-center'>
                     {setLinks}
                 </div>
@@ -57,7 +57,7 @@ function Footer({ currentPage, handlePageChange }) {
 
             <section className='col-lg-7 col-12 row'>
                 <nav className=' col-12 d-flex justify-content-center flex-column'>
-                    <h3 className='text-light text-center'>Menu</h3>
+                    <h3 className=' text-center'>Menu</h3>
                     <ul className='nav nav-tabs py-4 row' id='footer-ul'>
                         <li className="nav-item m-3 col-sm-3">
                             <a
@@ -89,7 +89,7 @@ function Footer({ currentPage, handlePageChange }) {
                     </ul>
                 </nav>
                 <div className='col-12 d-flex justify-content-center'>
-                    <h3 className='text-light'>Contact me:{" "}
+                    <h3 className=''>Contact me:{" "}
                         <a href='mailto:en.carlos.delacruz@gmail.com'>
                             en.carlos.delacruz@gmail.com
                         </a>
@@ -97,7 +97,7 @@ function Footer({ currentPage, handlePageChange }) {
 
                 </div>
             </section>
-            <p className='text-center text-light mt-4'> &copy; Carlos' Portfolio 2023</p>
+            <p className='text-center  mt-4'> &copy; Carlos' Portfolio 2023</p>
 
 
 
