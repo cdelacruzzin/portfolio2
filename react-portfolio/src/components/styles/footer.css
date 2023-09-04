@@ -3,7 +3,7 @@ footer{
     background-size: cover;
     background-position: center;
     background-repeat: repeat;
-    height: 20rem;
+    
     padding: 3rem 5rem 3rem 5rem;
 
 }
@@ -13,7 +13,6 @@ aside{
 }
 #footer-ul{
     width: 100%;
-
 }
 .img-links a{
     margin: 1%;

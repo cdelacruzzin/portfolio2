@@ -27,7 +27,7 @@ const handleHoverOut = (event) => handleHoverAction(event, 1);
 
   const setDivs = iconArr
     .map((icon, index) =>
-      <animated.div style={{transform: scaleStyles[index]}} key={index} className='col-md-2 col-sm-4 col-12 skill bg-light text-dark d-flex justify-content-center align-items-center flex-column m-2 pt-2' onMouseOver={handleHover} onMouseOut={handleHoverOut} id={icon} data-index={index}>
+      <animated.div style={{transform: scaleStyles[index]}} key={index} className='col-md-2 col-sm-4 col-12 skill bg-warning text-dark d-flex justify-content-center align-items-center flex-column m-2 pt-2' onMouseOver={handleHover} onMouseOut={handleHoverOut} id={icon} data-index={index}>
         <img src={imgsrc[icon]} alt={icon}></img>
         <h5>{icon}</h5>
       </animated.div>
@@ -36,7 +36,7 @@ const handleHoverOut = (event) => handleHoverAction(event, 1);
     
   return (
     <div className='p-5 '>
-      <div className='d-flex justify-content-center mb-5'>
+      <div className='d-flex justify-content-center '>
         <div className='col-md-6'>
           <div className="text-light h-100 d-flex flex-column align-items-center">
             <div className="vertical-line"></div>
