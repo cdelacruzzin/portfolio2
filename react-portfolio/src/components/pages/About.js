@@ -6,7 +6,7 @@ export default function About() {
 
 
   const iconArr = ['css', 'express', 'git', 'github', 'HTML', 'js', 'mern', 'mongodb', 'mysql', 'node', 'npm', 'react'];
-  const imgsrc = {}
+  const imgsrc = {};
 
   const [scaleStyles, setScaleStyles] = useState(Array(iconArr.length).fill('scale(1)'));
 

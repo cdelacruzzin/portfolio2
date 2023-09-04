@@ -1,4 +1,4 @@
-import { React} from 'react';
+import { React, useState } from 'react';
 import { useSpring, animated } from 'react-spring';
 import './styles/footer.css'
 import github from './images/skillIcons/githubwhite.svg';
@@ -6,10 +6,43 @@ import linkedin from './images/skillIcons/linkedin.svg';
 
 function Footer({ currentPage, handlePageChange }) {
 
-    const fadeStyles = useSpring({
-        opacity: 1,
-        from: { opacity: 0 }
-      });
+    const icons = ['githubwhite', 'linkedin', 'mail'];
+    const iconLinks = {
+        'linkedin': 'https://www.linkedin.com/in/carlos-dela-cruz-45a087227/',
+        'githubwhite': 'https://github.com/cdelacruzzin',
+        'mail':'mailto:en.carlos.delacruz@gmail.com'
+    };
+    const imgsrc = {};
+    icons.forEach((icon) => imgsrc[icon] = require(`./images/skillIcons/${icon}.svg`));
+
+
+    // ['scale(1)', 'scale(1)',]
+    const [scaleStyle, setScale] = useState(Array(icons.length).fill('scale(1)'));
+    const handleHoverAction = (event, scale) => {
+        // "event" is the React SyntheticEvent object
+        const divElement = event.currentTarget;
+        const index = parseInt(divElement.getAttribute('data-index'), 10);
+        const newScale = [...scaleStyle];
+        newScale[index] = `scale(${scale})`;
+        setScale(newScale);
+    };
+    const handleHover = (event) => handleHoverAction(event, 1.1);
+    const handleHoverOut = (event) => handleHoverAction(event, 1);
+
+    const setLinks = icons.map((icon, index) => (
+            <a
+                key={index}
+                href={iconLinks[icon]}
+                data-index={index}
+                onMouseOver={handleHover}
+                onMouseOut={handleHoverOut}
+                style={{ transform: scaleStyle[index] }}
+            >
+                <img src={imgsrc[icon]} alt={icon} />
+            </a>
+    ));
+
+
 
     return (
         <footer className=' mt-5 row'>
@@ -18,17 +51,7 @@ function Footer({ currentPage, handlePageChange }) {
             <aside className='col-lg-4 col-12'>
                 <h4 className='text-light fs-1 d-flex justify-content-center'>Carlos Dela Cruz</h4>
                 <div className='img-links d-flex justify-content-center'>
-                    <a href=' https://github.com/cdelacruzzin'>
-                        <img src={github} alt="GitHub"></img>
-                    </a>
-                    <a href='https://www.linkedin.com/in/carlos-dela-cruz-45a087227/'>
-                        <img src={linkedin} alt="LinkedIn"></img>
-                    </a>
-                    <a href='#contact'
-                    onClick={() => handlePageChange('Contact')}
-                    className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}> 
-                        <img src={github} alt="GitHub"></img>
-                    </a>
+                    {setLinks}
                 </div>
             </aside>
 
@@ -74,10 +97,9 @@ function Footer({ currentPage, handlePageChange }) {
 
                 </div>
             </section>
-
             <p className='text-center text-light mt-4'> &copy; Carlos' Portfolio 2023</p>
 
-            
+
 
         </footer>
     );
