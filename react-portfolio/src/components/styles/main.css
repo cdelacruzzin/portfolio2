@@ -12,10 +12,9 @@
     min-height: 100vh;
 
 }
-
 body{
-    font-family: 'Poppins';
-    line-height: 200%;
-    font-size: 1.3rem;
-    color: red;
+    font-family: 'Poppins' !important;
+    line-height: 200% !important;
+    font-size: 1.3rem !important;
+    color: red !important;
 }

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 import '../styles/contact.css'
-import { checkPassword, validateEmail } from '../utils/helpers';
+import { validateEmail } from '../utils/helpers';
 export default function Contact() {
 
 
@@ -9,6 +9,8 @@ export default function Contact() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [inquiry, setInquiry] = useState('');
+
+  const [errorMessage, setErrorMessage] = useState('');
 
   const handleInputChange = (e) => {
     const { target } = e;
@@ -27,8 +29,39 @@ export default function Contact() {
     }
   };
 
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
 
-  console.log(inquiry);
+
+    setErrorMessage('');
+    if (!name || !validateEmail(email)) {
+      setErrorMessage('Email or username is invalid');
+      return;
+    }
+
+    if(!inquiry) {
+      setErrorMessage('Inquiry field cannot be empty.')
+      return;
+    }
+
+    setCompanyName('');
+    setName('');
+    setEmail('');
+    setInquiry('');
+
+    
+
+
+
+
+
+
+
+
+
+
+
+  }
 
   return (
     <div className=''>
@@ -73,9 +106,16 @@ export default function Contact() {
             placeholder='Type here'
           ></textarea>
 
-          <div className='d-flex justify-content-center'>
-            <button className='submit'>send</button>
+          <div className='d-flex flex-column align-items-center'>
+            <button className='submit' type='button' onClick={handleFormSubmit}>send</button>
+
+            {errorMessage && (
+              <div>
+                <p className="error-text">{errorMessage}</p>
+              </div>
+            )}
           </div>
+
 
         </form>
 
