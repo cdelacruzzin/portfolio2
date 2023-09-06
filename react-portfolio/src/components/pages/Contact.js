@@ -83,7 +83,7 @@ return (
           placeholder="company name"
         />
 
-        <label>Name <span>Required</span></label>
+        <label>Name <span className='required-span'>Required</span></label>
         <input
           value={name}
           name='name'
@@ -92,7 +92,7 @@ return (
           placeholder='name'
         ></input>
 
-        <label>Email <span>Required</span></label>
+        <label>Email <span className='required-span'>Required</span></label>
         <input
           value={email}
           name='email'
@@ -101,7 +101,7 @@ return (
           placeholder='email'
         ></input>
 
-        <label>Inquiry <span>Required</span></label>
+        <label>Inquiry <span className='required-span'>Required</span></label>
         <textarea
           value={inquiry}
           name='inquiry'

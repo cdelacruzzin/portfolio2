@@ -1,0 +1,108 @@
+
+.img-container{
+    margin-bottom: 30px;
+    /* background-color: aquamarine; */
+    position: relative; /* Make sure it's relative so that the absolutely positioned elements are positioned with respect to this */
+}
+
+.thumb-info{
+    max-width: 100%;
+    border: 1px solid;
+    background-color: yellowgreen;
+    border-radius: 11%;
+}
+
+.thumb-info, .img-wrapper{
+    position: relative;
+    overflow: hidden;
+}
+
+.project-img{
+    max-width: 100%;
+    vertical-align: middle;
+    overflow: clip;
+}
+
+.thumb-info-title{
+    transition: bottom .3s;
+
+    transition: 0.3s;
+    background: rgba(33,37,41,0.8);
+    bottom: 13%;
+    font-weight: 600;
+    left: 0;
+    letter-spacing: .05em;
+    padding: 13px 21px 2px;
+    position: absolute;
+    z-index: 2;
+    max-width: 90%;
+}
+
+
+
+.thumb-info-inner{
+    transition: 0.3s;
+    display: block;
+    font: inherit;
+    color: inherit;
+    margin-bottom: 0;
+}
+
+
+.img-container:hover .thumb-info-title{
+    transform: translateY(-30%);
+    /* z-index: 0; Lower in the stacking order so description shows */
+}
+.img-container:hover .project-img{
+    transition: 0.3s;
+    transform: scale(1.2);
+}
+
+.project-a{
+    background-color: transparent;
+}
+
+
+.description-box {
+    position: absolute;
+    z-index: 1; /* Initially lower in stacking order */
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Or whatever styling you like */
+    text-align: center;
+    opacity: 0; /* Make it invisible initially */
+    bottom: 0; /* Align it at the bottom */
+  }
+
+  .img-container:hover .description-box {
+    opacity: 1; /* Make it visible */
+    z-index: 3; /* Bring it above everything else */
+    transform: translateY(100%);
+    transition: 0.5s;
+  }
+
+
+
+
+
+
+/* .img-container:hover {
+    transform: translate(-8px, -16px)
+    rotate(3deg);
+}
+
+.img-container:hover ~ .img-container {
+    transform: translate(130px)
+
+} */
+
+.project-links{
+    width: 100%;
+}
+.repo{
+    margin: 3% 5%;
+    width: 30%;
+    min-height: fit-content;
+    min-width: fit-content;
+    border-radius: 20px;
+    overflow: hidden;
+}
