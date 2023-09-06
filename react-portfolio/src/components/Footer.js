@@ -1,15 +1,15 @@
 import { React, useState } from 'react';
 import { useSpring, animated } from 'react-spring';
 import './styles/footer.css'
-import github from './images/skillIcons/githubwhite.svg';
+import github from './images/skillIcons/github.svg';
 import linkedin from './images/skillIcons/linkedin.svg';
 
 function Footer({ currentPage, handlePageChange }) {
 
-    const icons = ['githubwhite', 'linkedin', 'mail'];
+    const icons = ['github', 'linkedin', 'mail'];
     const iconLinks = {
         'linkedin': 'https://www.linkedin.com/in/carlos-dela-cruz-45a087227/',
-        'githubwhite': 'https://github.com/cdelacruzzin',
+        'github': 'https://github.com/cdelacruzzin',
         'mail':'mailto:en.carlos.delacruz@gmail.com'
     };
     const imgsrc = {};
@@ -50,7 +50,7 @@ function Footer({ currentPage, handlePageChange }) {
 
             <aside className='col-lg-4 col-12'>
                 <h4 className=' fs-1 d-flex justify-content-center'>Carlos Dela Cruz</h4>
-                <div className='img-links d-flex justify-content-center'>
+                <div className='img-links d-flex justify-content-center flex-wrap'>
                     {setLinks}
                 </div>
             </aside>
@@ -89,18 +89,14 @@ function Footer({ currentPage, handlePageChange }) {
                     </ul>
                 </nav>
                 <div className='col-12 d-flex justify-content-center'>
-                    <h3 className=''>Contact me:{" "}
+                    <h3 className='contact-me '>Contact me:{" "}
                         <a href='mailto:en.carlos.delacruz@gmail.com'>
                             en.carlos.delacruz@gmail.com
                         </a>
                     </h3>
-
                 </div>
             </section>
-            <p className='text-center  mt-4'> &copy; Carlos' Portfolio 2023</p>
-
-
-
+            <p className='copywrite text-center  mt-4'> &copy; Carlos' Portfolio 2023</p>
         </footer>
     );
 

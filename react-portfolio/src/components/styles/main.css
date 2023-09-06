@@ -9,7 +9,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: repeat;
-    width: 100%;
+    min-width: 100%;
     min-height: 100vh;
 
 }
@@ -19,6 +19,8 @@ body{
     font-size: clamp(12px, 4vw, 18px) !important;
     letter-spacing: .05em;
     color:aliceblue !important;
+    word-break: break-word;
+    hyphens: auto;
 }
 
 a{

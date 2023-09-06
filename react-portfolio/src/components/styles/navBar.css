@@ -16,10 +16,11 @@ header{
 
   .navbar-toggler-icon {
     color: #fff;
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
   }
 .nav-tabs {
     width: 50%;
+    min-width: fit-content;
     align-self: center;
     justify-content: center;
 }
@@ -36,21 +37,16 @@ header{
     text-align: center;
     text-decoration: solid;
     font-weight: bold; 
-    font-size: larger;
     min-width: fit-content;
 }
 
 .name-box{
     border-radius: 25px;  /* Adjust the radius as per your requirements */
-
-    width:auto;
-    height:auto ;
-    
-}
-.name-box p{
-    color: red;
+    position: absolute;
+    right: 0;
+    min-width: 25%;
     text-align: center;
     text-decoration: solid;
     font-weight: bold; 
-    font-size:xx-large;
+    
 }

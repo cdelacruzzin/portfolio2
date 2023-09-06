@@ -56,10 +56,8 @@ function NavTabs({ currentPage, handlePageChange }) {
         </div>
 
 
-        <div className='name-box d-flex align-items-center bg-dark'>
-          <p id='name' className=''>
+        <div className='name-box bg-dark'>
             Carlos Rafael Dela Cruz
-          </p>
         </div>
       </nav>
 
