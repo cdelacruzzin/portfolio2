@@ -13,7 +13,7 @@
 }
 
 .thumb-info, .img-wrapper{
-    position: relative;
+    /* position: relative; */
     overflow: hidden;
 }
 
@@ -28,7 +28,7 @@
 
     transition: 0.3s;
     background: rgba(33,37,41,0.8);
-    bottom: 13%;
+    bottom: 15%;
     font-weight: 600;
     left: 0;
     letter-spacing: .05em;
