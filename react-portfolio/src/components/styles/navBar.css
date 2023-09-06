@@ -2,10 +2,12 @@
 header{
     /* background-image: url('../images/headerImg.svg'); */
 
-    background-color: #19181d !important;
-    background-size: cover;
+    /* background-image: url('../images/headerImg.svg'); */
+    /* background-color: #19181d !important; */
+    background: rgba(0, 0, 0, 0.6);
+    /* background-size: cover;
     background-position: center;
-    background-repeat: repeat;
+    background-repeat: repeat; */
 }
 .navbar-toggler {
     border: 2px solid #fff;
@@ -14,7 +16,7 @@ header{
 
   .navbar-toggler-icon {
     color: #fff;
-    : 1.5rem;
+    font-size: 1.5rem;
   }
 .nav-tabs {
     width: 50%;
@@ -34,7 +36,7 @@ header{
     text-align: center;
     text-decoration: solid;
     font-weight: bold; 
-    : larger;
+    font-size: larger;
     min-width: fit-content;
 }
 
@@ -50,5 +52,5 @@ header{
     text-align: center;
     text-decoration: solid;
     font-weight: bold; 
-    :xx-large;
+    font-size:xx-large;
 }

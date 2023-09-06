@@ -4,6 +4,7 @@
 
 .background-svg {
     background-image: url('../images/headerImg.svg');
+    /* background-image: url('../images/bg.svg'); */
 
     background-size: cover;
     background-position: center;

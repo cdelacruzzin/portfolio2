@@ -1,8 +1,10 @@
 footer{
-    background-color: #19181d !important;
-    background-size: cover;
+    /* background-color: #19181d !important; */
+    /* background-image: url('../images/bg.svg'); */
+    background: rgba(0, 0, 0, 0.6);
+    /* background-size: cover;
     background-position: center;
-    background-repeat: repeat;
+    background-repeat: repeat; */
     padding: 3rem 5rem 3rem 5rem;
 
 

@@ -67,7 +67,7 @@
     position: absolute;
     z-index: 1; /* Initially lower in stacking order */
     width: 100%;
-    background: rgba(0, 0, 0, 0.6); /* Or whatever styling you like */
+    background: rgba(0, 0, 0, 0.6);
     text-align: center;
     opacity: 0; /* Make it invisible initially */
     bottom: 0; /* Align it at the bottom */
