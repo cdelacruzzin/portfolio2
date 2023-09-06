@@ -1,8 +1,5 @@
 import { React, useState } from 'react';
-import { useSpring, animated } from 'react-spring';
 import './styles/footer.css'
-import github from './images/skillIcons/github.svg';
-import linkedin from './images/skillIcons/linkedin.svg';
 
 function Footer({ currentPage, handlePageChange }) {
 
