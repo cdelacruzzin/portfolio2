@@ -42,7 +42,7 @@ function Footer({ currentPage, handlePageChange }) {
                 onMouseOver={handleHover}
                 onMouseOut={handleHoverOut}
                 style={{ transform: scaleStyle[index] }}
-                {...(isLast ? { href: googleDocURL, download: "Carlos'-Resume.pdf", id: 'resume' } : { href: iconLinks[icon] })}
+                {...(isLast ? { href: googleDocURL, download: "Carlos'-Resume.pdf"} : { href: iconLinks[icon] })}
             >
                 <img src={imgsrc[icon]} alt={icon} />
             </a>

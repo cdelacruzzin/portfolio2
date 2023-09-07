@@ -1,5 +1,16 @@
+.profile-container{
+  height: 25rem;
+  width: 25rem;
+  border-radius: 50%;
+  overflow:hidden;
+  display: flex;
+  justify-content: center;
+}
+.avatar{
 
+transform: scale(2.5) translateY(-9%);
 
+}
 .vertical-line{
     content: '';
     width: 3px;

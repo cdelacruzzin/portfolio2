@@ -1,6 +1,7 @@
 import { React, useState } from 'react';
 import { animated } from 'react-spring';
 import '../styles/about.css';
+import avatar1 from '../images/avatar2.png'
 
 export default function About() {
   
@@ -38,6 +39,10 @@ export default function About() {
       <div className='d-flex justify-content-center mb-5'>
         <div className='col-md-6'>
           <div className=" h-100 d-flex flex-column align-items-center">
+
+           <div className='profile-container bg-warning'>
+            <img src={avatar1} alt='avatar' className='avatar'></img>
+           </div>
             <div className="vertical-line"></div>
             <h2 className="mt-3 heading">ABOUT ME</h2>
             <h2 className='heading'>Just a bit...</h2>
@@ -56,7 +61,7 @@ export default function About() {
             </p>
 
             <h2 className='my-3'>Check out my resume</h2>
-            <a href='https://docs.google.com/document/d/1zke1d35Mmcl6ZtYxAuzp1ZBTjjPvKcw6suzLyIquCGc/edit?usp=sharing' className=' mb-4 mt-1 resume-a'>
+            <a href='https://docs.google.com/document/d/1zke1d35Mmcl6ZtYxAuzp1ZBTjjPvKcw6suzLyIquCGc/edit?usp=sharing' className=' mb-4 mt-1 resume-a' id='resume'>
               <img src={require('../images/skillIcons/resume.svg').default} alt='resume' />
             </a>
             <div className="vertical-line"></div>
