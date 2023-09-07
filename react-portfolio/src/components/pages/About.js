@@ -6,6 +6,7 @@ import avatar1 from '../images/avatar2.png'
 export default function About() {
   
   const iconArr = ['css', 'express', 'git', 'github', 'HTML', 'js', 'mern', 'mongodb', 'mysql', 'node', 'npm', 'react'];
+
   const imgsrc = {};
 
   const [scaleStyles, setScaleStyles] = useState(Array(iconArr.length).fill('scale(1)'));

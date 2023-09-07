@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import NavTabs from './NavTabs';
 import About from './pages/About';
-import Blog from './pages/Blog';
+import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import Footer from './Footer'
 import './styles/main.css'
@@ -11,7 +11,7 @@ export default function PortfolioContainer() {
 
   const renderPage = () => {
     if (currentPage === 'About') return <About />;
-    if (currentPage === 'Blog') return <Blog />;
+    if (currentPage === 'Projects') return <Projects />;
     return <Contact />;
   };
 

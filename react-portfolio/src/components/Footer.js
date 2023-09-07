@@ -77,11 +77,11 @@ function Footer({ currentPage, handlePageChange }) {
                         </li>
                         <li className="nav-item m-3 col-sm-3">
                             <a
-                                href="#blog"
-                                onClick={() => handlePageChange('Blog')}
-                                className={currentPage === 'Blog' ? 'nav-link ' : 'nav-link'}
+                                href="#projects"
+                                onClick={() => handlePageChange('Projects')}
+                                className={currentPage === 'Projects' ? 'nav-link ' : 'nav-link'}
                             >
-                                Blog
+                                Projects
                             </a>
                         </li>
                         <li className="nav-item m-3 col-sm-3">
