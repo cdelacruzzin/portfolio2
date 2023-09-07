@@ -71,7 +71,7 @@ return (
   <div className='d-flex justify-content-center flex-column'>
 
     <h1 className='text-center my-5'>Contact Page</h1>
-    <div className='rounded-xl p-5 d-flex justify-content-center'>
+    <div className='rounded-xl p-5 form-container d-flex justify-content-center'>
 
       <form className='d-flex flex-column p-5 gap-5' id='contact-form'>
         <label>Company name </label>

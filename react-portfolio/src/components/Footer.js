@@ -1,5 +1,4 @@
 import { React, useState } from 'react';
-import resume from './images/skillIcons/resume.svg'
 import './styles/footer.css'
 
 function Footer({ currentPage, handlePageChange }) {
@@ -13,7 +12,6 @@ function Footer({ currentPage, handlePageChange }) {
         'resume': 'https://docs.google.com/document/d/1zke1d35Mmcl6ZtYxAuzp1ZBTjjPvKcw6suzLyIquCGc/edit?usp=sharing'
     };
     const imgsrc = {};
-    let isLast = false;
     const googleDocID = '1zke1d35Mmcl6ZtYxAuzp1ZBTjjPvKcw6suzLyIquCGc';
     const googleDocURL = `https://docs.google.com/document/d/${googleDocID}/export?format=pdf`;
 
@@ -72,7 +70,7 @@ function Footer({ currentPage, handlePageChange }) {
                             <a
                                 href="#about"
                                 onClick={() => handlePageChange('About')}
-                                className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
+                                className={currentPage === 'About' ? 'nav-link ' : 'nav-link'}
                             >
                                 About
                             </a>
@@ -81,7 +79,7 @@ function Footer({ currentPage, handlePageChange }) {
                             <a
                                 href="#blog"
                                 onClick={() => handlePageChange('Blog')}
-                                className={currentPage === 'Blog' ? 'nav-link active' : 'nav-link'}
+                                className={currentPage === 'Blog' ? 'nav-link ' : 'nav-link'}
                             >
                                 Blog
                             </a>
@@ -90,7 +88,7 @@ function Footer({ currentPage, handlePageChange }) {
                             <a
                                 href="#contact"
                                 onClick={() => handlePageChange('Contact')}
-                                className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
+                                className={currentPage === 'Contact' ? 'nav-link ' : 'nav-link'}
                             >
                                 Contact
                             </a>

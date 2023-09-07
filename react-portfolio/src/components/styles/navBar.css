@@ -1,43 +1,23 @@
 
 header{
-    /* background-image: url('../images/headerImg.svg'); */
-
-    /* background-image: url('../images/headerImg.svg'); */
-    /* background-color: #19181d !important; */
     background: rgba(0, 0, 0, 0.6);
-    /* background-size: cover;
-    background-position: center;
-    background-repeat: repeat; */
 }
-.navbar-toggler {
-    border: 2px solid #fff;
-    background-color: white;
-  }
 
-  .navbar-toggler-icon {
-    color: #fff;
-    /* font-size: 1.5rem; */
-  }
 .nav-tabs {
-    width: 50%;
     min-width: fit-content;
-    align-self: center;
-    justify-content: center;
+    width: 50%;
 }
-#navbarNav {
-    justify-content: space-between;
-    flex-direction: row;
-}
-
 .nav-item {
-    width: 25%;
+    min-width: fit-content;
+    width: 20%;
+    margin: 1rem 1rem;
 }
 .nav-item a {
-    color: red;
+    width: 100%;
     text-align: center;
-    text-decoration: solid;
-    font-weight: bold; 
     min-width: fit-content;
+    border-radius: 20px;
+    font-size: xx-large;
 }
 
 .name-box{
@@ -46,7 +26,8 @@ header{
     right: 0;
     min-width: 25%;
     text-align: center;
-    text-decoration: solid;
     font-weight: bold; 
+    font-size: xx-large;
+    /* border: 2px solid red; */
     
 }
