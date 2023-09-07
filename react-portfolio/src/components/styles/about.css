@@ -20,10 +20,11 @@
   background: rgba(0, 0, 0, 0.5);
 }
 
-
-
   .skill img{
     width: 4rem;
     height: 4rem;
     object-fit: fill;
+  }
+  .resume-a:hover{
+    transform: scale(1.1);
   }

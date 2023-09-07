@@ -4,7 +4,7 @@ import '../styles/about.css';
 
 export default function About() {
 
-
+  const resume = [{ 'resume': 'https://docs.google.com/document/d/1zke1d35Mmcl6ZtYxAuzp1ZBTjjPvKcw6suzLyIquCGc/edit?usp=sharing' }]
   const iconArr = ['css', 'express', 'git', 'github', 'HTML', 'js', 'mern', 'mongodb', 'mysql', 'node', 'npm', 'react'];
   const imgsrc = {};
 
@@ -13,6 +13,7 @@ export default function About() {
   const handleHoverAction = (event, scale) => {
     // "event" is the React SyntheticEvent object
     const divElement = event.currentTarget;
+    console.log(divElement)
     const index = parseInt(divElement.getAttribute('data-index'), 10); // Get index
     const newScaleStyles = [...scaleStyles];  //create a shallow copy of the existing scaleStyles array and store it in a new variable newScaleStyles.
     newScaleStyles[index] = `scale(${scale})`;
@@ -55,6 +56,11 @@ export default function About() {
               This academic venture has armed me with the skills required to excel in
               today's fast-paced tech landscape.
             </p>
+
+            <h2 className='my-3'>Check out my resume</h2>
+            <a href='https://docs.google.com/document/d/1zke1d35Mmcl6ZtYxAuzp1ZBTjjPvKcw6suzLyIquCGc/edit?usp=sharing' className=' mb-4 mt-1 resume-a'>
+              <img src={require('../images/skillIcons/resume.svg').default} alt='resume' />
+            </a>
             <div className="vertical-line"></div>
             <h2 className='heading'>My Skillset</h2>
             <div className='horizontal-line rounded-box'></div>
