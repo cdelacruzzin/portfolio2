@@ -1,16 +1,25 @@
 import { React, useState } from 'react';
+import resume from './images/skillIcons/resume.svg'
 import './styles/footer.css'
 
 function Footer({ currentPage, handlePageChange }) {
 
-    const icons = ['github', 'linkedin', 'mail'];
+    const icons = ['github', 'linkedin', 'mail', 'resume'];
+
     const iconLinks = {
         'linkedin': 'https://www.linkedin.com/in/carlos-dela-cruz-45a087227/',
         'github': 'https://github.com/cdelacruzzin',
-        'mail':'mailto:en.carlos.delacruz@gmail.com'
+        'mail': 'mailto:en.carlos.delacruz@gmail.com',
+        'resume': 'https://docs.google.com/document/d/1zke1d35Mmcl6ZtYxAuzp1ZBTjjPvKcw6suzLyIquCGc/edit?usp=sharing'
     };
     const imgsrc = {};
-    icons.forEach((icon) => imgsrc[icon] = require(`./images/skillIcons/${icon}.svg`));
+    let isLast = false;
+    const googleDocID = '1zke1d35Mmcl6ZtYxAuzp1ZBTjjPvKcw6suzLyIquCGc';
+    const googleDocURL = `https://docs.google.com/document/d/${googleDocID}/export?format=pdf`;
+
+    for (let index = 0; index < icons.length; index++) {
+        imgsrc[icons[index]] = require(`./images/skillIcons/${icons[index]}.svg`)
+    }
 
 
     // ['scale(1)', 'scale(1)',]
@@ -26,18 +35,21 @@ function Footer({ currentPage, handlePageChange }) {
     const handleHover = (event) => handleHoverAction(event, 1.1);
     const handleHoverOut = (event) => handleHoverAction(event, 1);
 
-    const setLinks = icons.map((icon, index) => (
+    const setLinks = icons.map((icon, index) => {
+        const isLast = index === icons.length - 1;  //determines if it is the last property in icons. let's us know if we are mapping the resume
+        return (
             <a
                 key={index}
-                href={iconLinks[icon]}
                 data-index={index}
                 onMouseOver={handleHover}
                 onMouseOut={handleHoverOut}
                 style={{ transform: scaleStyle[index] }}
+                {...(isLast ? { href: googleDocURL, download: "Carlos'-Resume.pdf" } : { href: iconLinks[icon] })}
             >
                 <img src={imgsrc[icon]} alt={icon} />
             </a>
-    ));
+        );
+    });
 
 
 
