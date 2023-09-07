@@ -45,8 +45,8 @@ function Footer({ currentPage, handlePageChange }) {
         <footer className=' mt-5 row'>
 
 
-            <aside className='col-lg-4 col-12'>
-                <h4 className=' fs-1 d-flex justify-content-center'>Carlos Dela Cruz</h4>
+            <aside className='col-lg-4 col-12 d-flex flex-column justify-content-center'>
+                <h4 className='fs-1 d-flex justify-content-center' >Carlos Dela Cruz</h4>
                 <div className='img-links d-flex justify-content-center flex-wrap'>
                     {setLinks}
                 </div>

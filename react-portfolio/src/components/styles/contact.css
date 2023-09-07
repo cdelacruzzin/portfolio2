@@ -1,9 +1,10 @@
 
 
-.form-container{
+#contact-form{
     border-radius: 100px;
+    width: 50%;
+    background: rgba(0, 0, 0, 0.6);
 }
-
 input, textarea{
     border-radius: 1.75rem;
     width: 50%;
@@ -18,7 +19,6 @@ textarea{
     height: 15rem;
 }
 label{
-    : 2rem;
     font-weight: 600;
     color:rgb(76, 183, 207);
 }
@@ -29,7 +29,6 @@ label{
     border-radius: 1.75rem;
     border: 2px solid red;
     padding: 1rem;
-    : 1.2rem;
     font-weight: 500;
 }
   

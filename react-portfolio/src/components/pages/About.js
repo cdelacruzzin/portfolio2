@@ -19,21 +19,21 @@ export default function About() {
     setScaleStyles(newScaleStyles);
   };
 
-  
-const handleHover = (event) => handleHoverAction(event, 1.1);
-const handleHoverOut = (event) => handleHoverAction(event, 1);
+
+  const handleHover = (event) => handleHoverAction(event, 1.1);
+  const handleHoverOut = (event) => handleHoverAction(event, 1);
 
   iconArr.forEach((icon) => imgsrc[icon] = require(`../images/skillIcons/${icon}.svg`));
 
   const setDivs = iconArr
     .map((icon, index) =>
-      <animated.div style={{transform: scaleStyles[index]}} key={index} className='col-md-2 col-sm-4 col-12 skill d-flex justify-content-center align-items-center flex-column m-2 pt-2' onMouseOver={handleHover} onMouseOut={handleHoverOut} id={icon} data-index={index}>
+      <animated.div style={{ transform: scaleStyles[index] }} key={index} className='col-md-2 col-sm-4 col-12 skill d-flex justify-content-center align-items-center flex-column m-2 pt-2' onMouseOver={handleHover} onMouseOut={handleHoverOut} id={icon} data-index={index}>
         <img src={imgsrc[icon]} alt={icon}></img>
         <h5>{icon}</h5>
       </animated.div>
     );
 
-    
+
   return (
     <main className='p-5 '>
       <div className='d-flex justify-content-center mb-5'>
@@ -43,16 +43,17 @@ const handleHoverOut = (event) => handleHoverAction(event, 1);
             <h2 className="mt-3 heading">ABOUT ME</h2>
             <h2 className='heading'>Just a bit...</h2>
             <p className='text-center'>
-              Donec a volutpat quam. Curabitur nec varius justo, sed rutrum ligula.
-              Curabitur pellentesque turpis sit amet eros iaculis, a mollis arcu
-              dictum. Ut vel ante eget massa ornare placerat. Etiam nisl orci, finibus
-              sodales volutpat et, hendrerit ut dolor. Suspendisse porta dictum nunc,
-              sed pretium risus rutrum eget. Nam consequat, ligula in faucibus
-              Donec a volutpat quam. Curabitur nec varius justo, sed rutrum ligula.
-              Curabitur pellentesque turpis sit amet eros iaculis, a mollis arcu
-              dictum. Ut vel ante eget massa ornare placerat. Etiam nisl orci, finibus
-              sodales volutpat et, hendrerit ut dolor. Suspendisse porta dictum nunc,
-              sed pretium risus rutrum eget. Nam consequat, ligula in faucibus
+              Hello and welcome. I'm Carlos Dela Cruz, a Full Stack Developer with a
+              blend of technical skills and creative vision. Having graduated from
+              University of Toronto's esteemed full-stack flex development bootcamp with a
+              95%, I specialize in database management, including both MySQL and NoSQL, Express,
+              React, Node.js.
+              <h2 className='my-5'>Educational Milestones</h2>
+              The bootcamp experience at University of Toronto was an intensive but fulfilling journey.
+              The curriculum was comprehensive, covering everything from fundamental web development
+              techniques to the nuanced applications of modern JavaScript frameworks.
+              This academic venture has armed me with the skills required to excel in
+              today's fast-paced tech landscape.
             </p>
             <div className="vertical-line"></div>
             <h2 className='heading'>My Skillset</h2>

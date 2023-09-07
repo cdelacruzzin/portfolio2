@@ -18,15 +18,6 @@ function NavTabs({ currentPage, handlePageChange }) {
           <ul className={`${!isNavCollapsed ? 'flex-column' : ''}  nav nav-tabs bg-dark`}>
             <li className="nav-item">
               <a
-                href="#home"
-                onClick={() => handlePageChange('Home')}
-                className={currentPage === 'Home' ? 'nav-link active ' : 'nav-link'}
-              >
-                Home
-              </a>
-            </li>
-            <li className="nav-item">
-              <a
                 href="#about"
                 onClick={() => handlePageChange('About')}
                 className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
