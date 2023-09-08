@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import TSUNPHASE from '../images/TSUNPHASE.jpg'
+
 import '../styles/projects.css';
 export default function Blog() {
 

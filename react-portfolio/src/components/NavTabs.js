@@ -54,8 +54,6 @@ function NavTabs({ currentPage, handlePageChange }) {
             </li>
           </ul>
         </div>
-
-
         <div className='name-box'>
             Carlos Rafael Dela Cruz
         </div>
