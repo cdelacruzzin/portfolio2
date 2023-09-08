@@ -1,4 +1,16 @@
 import React, { useState } from 'react';
+import mode_de_vie from '../images/project-icons/mode-de-vie.PNG';
+import itinerary_planner from '../images/project-icons/itinerary-planner.PNG';
+import nosql_social_network_api from '../images/project-icons/nosql-social-network-api.PNG';
+
+import mvc_tech_blog from '../images/project-icons/mvc-tech-blog.PNG';
+
+import ORM_e_commerce_back_end from '../images/project-icons/ORM-e-commerce-back-end.PNG';
+
+import MySQL_employee_tracker from '../images/project-icons/MySQL-employee-tracker.PNG';
+
+import pwa_text_editor from '../images/project-icons/pwa-text-editor.PNG';
+import weather_dashboard from '../images/project-icons/weather-dashboard.PNG';
 
 import '../styles/projects.css';
 export default function Blog() {
@@ -9,7 +21,7 @@ export default function Blog() {
       ['https://github.com/PythonFabi/mode-de-vie',
         'https://warm-caverns-23380-13159eb09b79.herokuapp.com/login',
         'deployment',
-        'mode-de-vie'
+        mode_de_vie
       ],
       'topProjects'],
 
@@ -17,7 +29,7 @@ export default function Blog() {
       ['https://github.com/Koro999/itinerary-planner',
         'https://koro999.github.io/itinerary-planner/',
         'deployment',
-        'itinerary-planner'
+        itinerary_planner
       ],
       'topProjects'],
 
@@ -28,7 +40,7 @@ export default function Blog() {
       ['https://github.com/cdelacruzzin/18-NoSQL-Social-Network-API',
         'https://github.com/cdelacruzzin/18-NoSQL-Social-Network-API#demo-links',
         'demo',
-        'nosql-social-network-api'
+        nosql_social_network_api
       ],
       'backEnd'],
 
@@ -36,7 +48,7 @@ export default function Blog() {
       ['https://github.com/cdelacruzzin/14-Model-View-Controller-MVC-Tech-Blog',
         'https://warm-spire-10804-b87ddf9aa334.herokuapp.com/',
         'deployment',
-        'mvc-tech-blog'
+        mvc_tech_blog
       ],
       'backEnd'],
 
@@ -44,7 +56,7 @@ export default function Blog() {
       ['https://github.com/cdelacruzzin/13-Object-Relational-Mapping-ORM-E-Commerce-Back-End',
         'https://github.com/cdelacruzzin/13-Object-Relational-Mapping-ORM-E-Commerce-Back-End#demo-links',
         'demo',
-        'ORM-e-commerce-back-end'
+        ORM_e_commerce_back_end
       ],
       'backEnd'],
 
@@ -52,7 +64,7 @@ export default function Blog() {
       ['https://github.com/cdelacruzzin/12-SQL-Employee-Tracker',
         'https://drive.google.com/file/d/1_Z3yE_0LUblo5XvWU2eR_SON3tpqBQgF/view',
         'demo',
-        'MySQL-employee-tracker'
+        MySQL_employee_tracker
       ],
       'backEnd'],
   ]
@@ -62,7 +74,7 @@ export default function Blog() {
       ['https://github.com/Koro999/itinerary-planner',
         'https://koro999.github.io/itinerary-planner/',
         'deployment',
-        'itinerary-planner'
+        itinerary_planner
       ],
       'frontEnd'],
 
@@ -70,7 +82,7 @@ export default function Blog() {
       ['https://github.com/cdelacruzzin/19-Progressive-Web-Applications-PWA-Text-Editor',
         'https://pwa-text-editor-app-98a67a010265.herokuapp.com/',
         'deployment',
-        'pwa-text-editor'
+        pwa_text_editor
       ],
       'frontEnd'],
 
@@ -78,46 +90,17 @@ export default function Blog() {
       ['https://github.com/cdelacruzzin/Weather-Dashboard',
         'https://cdelacruzzin.github.io/Weather-Dashboard/',
         'deployment',
-        'weather-dashboard'
+        weather_dashboard
       ],
       'frontEnd']
   ]
   const allProjects = [topProjects, frontEnd, backEnd]
-  // const setProjects = (projects) => {
-  //   return projects.map((projectCategory) =>
-  //     <div className='project-entry-column col-md-4'>
-  //       <div className='img-container'>
-  //         <div className='thumb-info thumb-info-hide-wrapper-bg'>
-  //           <span className='img-wrapper'>
-  //             <img className='project-img' />
-  //             <span className='thumb-info-title'>
-  //               <span className='thumb-info-inner'>
-  //                 {projectCategory[0]}
-  //               </span>
-  //             </span>
-  //           </span>
-  //         </div>
-  //         <div className="description-box d-flex justify-content-center">
-  //           <div className="repo bg-dark d-flex">
-  //             <a className='project-links' href={projectCategory[1][0]}>
-  //               github
-  //             </a>
-  //           </div>
-  //           <div className="repo bg-dark d-flex">
-  //             <a className='project-links' href={projectCategory[1][1]}>
-  //               {projectCategory[1][2]}
-  //             </a>
-  //           </div>
-  //         </div>
-  //       </div>
-  //     </div>
-  //   );
-  // };
+  
 
 
   const setProjects = (projects) => {
     return projects.map((projectCategory) => {
-      const src = require(`../images/project-icons/${projectCategory[1][3]}.PNG`);
+      const src =projectCategory[1][3];
 
       return (
         <div className='project-entry-column col-md-4'>
