@@ -29,8 +29,8 @@ section nav{
 #footer-ul li a{
     font-size: clamp(12px, 4vw, 18px) !important;
     min-width: 100%;
-    
-    background-color: aliceblue;
+    color: aliceblue;
+    background-color: rgb(19,14,32);
     
 }
 

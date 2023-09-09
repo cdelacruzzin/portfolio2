@@ -16,8 +16,9 @@ header{
     min-width: fit-content;
     border-radius: 20px;
     font-size: xx-large;
+    color: aliceblue;
     
-    background-color: aliceblue;
+    background-color: rgb(19,14,32);
 }
 
 .name-box{
@@ -29,7 +30,8 @@ header{
     text-align: center;
     font-weight: bold; 
     
-    background-color: aliceblue;
+    background-color: rgb(19,14,32);
+    color: aliceblue;
     font-size: xx-large;
     
 }
