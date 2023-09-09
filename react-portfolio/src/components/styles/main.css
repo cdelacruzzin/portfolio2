@@ -1,7 +1,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-
+*{
+    font-size: clamp(12px, 4vw, 18px) !important;
+    max-width: 100vw;
+}
 .background-svg {
     background-image: url('../images/headerImg.svg');
     /* background-image: url('../images/bg.svg'); */
@@ -23,7 +26,8 @@ body{
     hyphens: auto;
 }
 
-a{
-    color: inherit !important;
+a, .name-box{
+    color: black !important;
     text-decoration: none !important;
+
 }

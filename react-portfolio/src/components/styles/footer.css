@@ -4,16 +4,38 @@ footer{
     min-width: 100%;
 
 }
-aside{
-    /* background-color: blue; */
-    max-width: fit-content;
-}
-#footer-ul{
+
+
+section{
     width: 100%;
 }
-.img-links a, .img-links img {
-    max-width: 4rem;
+
+section > *{
+    min-width:fit-content;
+    width: fit-content;
+}
+section nav{
+    min-width: 100%;
+}
+#footer-ul{
+    min-width: 100%;
+}
+#footer-ul li{
+    min-width: 100%;
+    width: fit-content;
+    
+}
+
+#footer-ul li a{
+    font-size: clamp(12px, 4vw, 18px) !important;
+    min-width: 100%;
+    
+    background-color: aliceblue;
+    
+}
+
+ .img-links img {
     height: 4rem;
     margin: 1%;
-
+    max-width: 100%;
 }

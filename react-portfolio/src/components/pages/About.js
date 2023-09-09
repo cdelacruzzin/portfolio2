@@ -41,7 +41,7 @@ export default function About() {
         <div className='col-md-6'>
           <div className=" h-100 d-flex flex-column align-items-center">
 
-           <div className='profile-container bg-warning'>
+           <div className='profile-container'>
             <img src={avatar1} alt='avatar' className='avatar'></img>
            </div>
             <div className="vertical-line"></div>

@@ -5,11 +5,9 @@ header{
 
 .nav-tabs {
     min-width: fit-content;
-    width: 50%;
 }
 .nav-item {
-    min-width: fit-content;
-    width: 20%;
+    height: fit-content;
     margin: 1rem 1rem;
 }
 .nav-item a {
@@ -18,16 +16,20 @@ header{
     min-width: fit-content;
     border-radius: 20px;
     font-size: xx-large;
+    
+    background-color: aliceblue;
 }
 
 .name-box{
     border-radius: 25px;  /* Adjust the radius as per your requirements */
     position: absolute;
     right: 0;
-    min-width: 25%;
+    top: 0;
+    width: clamp(fit-content, 25%, 100%);
     text-align: center;
     font-weight: bold; 
+    
+    background-color: aliceblue;
     font-size: xx-large;
-    /* border: 2px solid red; */
     
 }
