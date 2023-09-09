@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/20-React-React-Portfolio/static/css/main.f549e2b0.css",
-    "main.js": "/20-React-React-Portfolio/static/js/main.abf00951.js",
+    "main.css": "/20-React-React-Portfolio/static/css/main.391db0db.css",
+    "main.js": "/20-React-React-Portfolio/static/js/main.c38150d4.js",
     "static/media/avatar2.png": "/20-React-React-Portfolio/static/media/avatar2.eef267eefe556f85549b.png",
     "static/media/mode-de-vie.PNG": "/20-React-React-Portfolio/static/media/mode-de-vie.bfede194c3fd7af961d1.PNG",
     "static/media/MySQL-employee-tracker.PNG": "/20-React-React-Portfolio/static/media/MySQL-employee-tracker.b2d6ca749149af92a680.PNG",
@@ -26,13 +26,13 @@
     "static/media/js.svg": "/20-React-React-Portfolio/static/media/js.acc4642f682cd93a4c20.svg",
     "static/media/css.svg": "/20-React-React-Portfolio/static/media/css.6ec1697a406483c72ccf.svg",
     "static/media/HTML.svg": "/20-React-React-Portfolio/static/media/HTML.aff8a9cb398fc75e4f21.svg",
-    "static/media/npm.svg": "/20-React-React-Portfolio/static/media/npm.3cad4cc65b85a602c6ac.svg",
+    "static/media/npm.svg": "/20-React-React-Portfolio/static/media/npm.f50030880b3a655fe565.svg",
     "static/media/react.svg": "/20-React-React-Portfolio/static/media/react.928f956d9c8ebcffb98a.svg",
-    "main.f549e2b0.css.map": "/20-React-React-Portfolio/static/css/main.f549e2b0.css.map",
-    "main.abf00951.js.map": "/20-React-React-Portfolio/static/js/main.abf00951.js.map"
+    "main.391db0db.css.map": "/20-React-React-Portfolio/static/css/main.391db0db.css.map",
+    "main.c38150d4.js.map": "/20-React-React-Portfolio/static/js/main.c38150d4.js.map"
   },
   "entrypoints": [
-    "static/css/main.f549e2b0.css",
-    "static/js/main.abf00951.js"
+    "static/css/main.391db0db.css",
+    "static/js/main.c38150d4.js"
   ]
 }
