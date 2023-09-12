@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/20-React-React-Portfolio/static/css/main.c6c04880.css",
+    "main.css": "/20-React-React-Portfolio/static/css/main.d405898a.css",
     "main.js": "/20-React-React-Portfolio/static/js/main.3f834fa2.js",
     "static/media/avatar2.png": "/20-React-React-Portfolio/static/media/avatar2.eef267eefe556f85549b.png",
     "static/media/mode-de-vie.PNG": "/20-React-React-Portfolio/static/media/mode-de-vie.bfede194c3fd7af961d1.PNG",
@@ -28,11 +28,11 @@
     "static/media/HTML.svg": "/20-React-React-Portfolio/static/media/HTML.aff8a9cb398fc75e4f21.svg",
     "static/media/npm.svg": "/20-React-React-Portfolio/static/media/npm.f50030880b3a655fe565.svg",
     "static/media/react.svg": "/20-React-React-Portfolio/static/media/react.928f956d9c8ebcffb98a.svg",
-    "main.c6c04880.css.map": "/20-React-React-Portfolio/static/css/main.c6c04880.css.map",
+    "main.d405898a.css.map": "/20-React-React-Portfolio/static/css/main.d405898a.css.map",
     "main.3f834fa2.js.map": "/20-React-React-Portfolio/static/js/main.3f834fa2.js.map"
   },
   "entrypoints": [
-    "static/css/main.c6c04880.css",
+    "static/css/main.d405898a.css",
     "static/js/main.3f834fa2.js"
   ]
 }
