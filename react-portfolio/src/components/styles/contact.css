@@ -33,13 +33,24 @@ label{
 }
 
 .required-span{
-    margin-left: 5rem;
+    margin-left: clamp(1rem, 5vw, 5rem);
     color:rgb(76, 183, 207);
     border-radius: 1.75rem;
     border: 2px solid red;
     padding: 1rem;
     font-weight: 500;
+    font-size: clamp(1px, 4vw, 18px) !important;
 }
+.required-span::before {
+    content: 'Required';
+  }
+  @media (max-width: 290px) {
+    .required-span::before {
+      content: '*';
+      margin-left: 0;
+    }
+  }
+  
   
 .submit {
     width: 7rem;
