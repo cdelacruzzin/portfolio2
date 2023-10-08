@@ -1,9 +1,8 @@
 {
   "files": {
-    "main.css": "/20-React-React-Portfolio/static/css/main.5a33d085.css",
-    "main.js": "/20-React-React-Portfolio/static/js/main.59b1444d.js",
-    "static/media/avatar2.PNG": "/20-React-React-Portfolio/static/media/avatar2.eef267eefe556f85549b.PNG",
-    "static/media/IMG_0877_00.png": "/20-React-React-Portfolio/static/media/IMG_0877_00.33f6d0dedf4c19c6dc49.png",
+    "main.css": "/20-React-React-Portfolio/static/css/main.6e116c4d.css",
+    "main.js": "/20-React-React-Portfolio/static/js/main.283eef8b.js",
+    "static/media/Capture.PNG": "/20-React-React-Portfolio/static/media/Capture.ae658277f527ed005b2f.PNG",
     "static/media/mode-de-vie.PNG": "/20-React-React-Portfolio/static/media/mode-de-vie.bfede194c3fd7af961d1.PNG",
     "static/media/MySQL-employee-tracker.PNG": "/20-React-React-Portfolio/static/media/MySQL-employee-tracker.b2d6ca749149af92a680.PNG",
     "static/media/itinerary-planner.PNG": "/20-React-React-Portfolio/static/media/itinerary-planner.71c9a159cc506323d731.PNG",
@@ -14,26 +13,26 @@
     "static/media/pwa-text-editor.PNG": "/20-React-React-Portfolio/static/media/pwa-text-editor.274da49b3ec8e70fd6bf.PNG",
     "static/media/node.svg": "/20-React-React-Portfolio/static/media/node.dd47e26ed1d7dddf018e.svg",
     "static/media/mysql.svg": "/20-React-React-Portfolio/static/media/mysql.43de11b606ebbf08dc0f.svg",
-    "static/media/headerImg.svg": "/20-React-React-Portfolio/static/media/headerImg.69e03b4916205ae28d7a.svg",
-    "static/media/mail.svg": "/20-React-React-Portfolio/static/media/mail.d875aa2cfaa36900ac35.svg",
-    "static/media/github.svg": "/20-React-React-Portfolio/static/media/github.7ef500623594b3e5e9ac.svg",
-    "static/media/resume.svg": "/20-React-React-Portfolio/static/media/resume.a1ffcc40a0115e526e57060ad3ba63b8.svg",
+    "static/media/headerImg.svg": "/20-React-React-Portfolio/static/media/headerImg.cb207883155b8bebce4c.svg",
+    "static/media/mail.svg": "/20-React-React-Portfolio/static/media/mail.5e82bc12e6a9a85bae0b.svg",
+    "static/media/github.svg": "/20-React-React-Portfolio/static/media/github.a7ccb429b0ad5205f6a4.svg",
+    "static/media/resume.svg": "/20-React-React-Portfolio/static/media/resume.7f2624e97900c22a9c050d3f2cfb0375.svg",
     "static/media/git.svg": "/20-React-React-Portfolio/static/media/git.721e3a53fba8e3b4f9bd.svg",
-    "static/media/linkedin.svg": "/20-React-React-Portfolio/static/media/linkedin.e89cd1548b1ed137b7bd.svg",
+    "static/media/linkedin.svg": "/20-React-React-Portfolio/static/media/linkedin.a4472bcdad6dd8627168.svg",
     "static/media/mern.svg": "/20-React-React-Portfolio/static/media/mern.6e9d5bf39ef2899966b5.svg",
     "static/media/mongodb.svg": "/20-React-React-Portfolio/static/media/mongodb.0781b723446e1f8a1734.svg",
     "index.html": "/20-React-React-Portfolio/index.html",
     "static/media/express.svg": "/20-React-React-Portfolio/static/media/express.a9508f39f02f4f15cc19.svg",
-    "static/media/js.svg": "/20-React-React-Portfolio/static/media/js.acc4642f682cd93a4c20.svg",
-    "static/media/css.svg": "/20-React-React-Portfolio/static/media/css.6ec1697a406483c72ccf.svg",
-    "static/media/HTML.svg": "/20-React-React-Portfolio/static/media/HTML.aff8a9cb398fc75e4f21.svg",
-    "static/media/npm.svg": "/20-React-React-Portfolio/static/media/npm.f50030880b3a655fe565.svg",
-    "static/media/react.svg": "/20-React-React-Portfolio/static/media/react.928f956d9c8ebcffb98a.svg",
-    "main.5a33d085.css.map": "/20-React-React-Portfolio/static/css/main.5a33d085.css.map",
-    "main.59b1444d.js.map": "/20-React-React-Portfolio/static/js/main.59b1444d.js.map"
+    "static/media/js.svg": "/20-React-React-Portfolio/static/media/js.61c1fa6b2ee4eb8ce8d0.svg",
+    "static/media/css.svg": "/20-React-React-Portfolio/static/media/css.541200b174db976480ed.svg",
+    "static/media/HTML.svg": "/20-React-React-Portfolio/static/media/HTML.cf51b3879972e0e8c0c9.svg",
+    "static/media/npm.svg": "/20-React-React-Portfolio/static/media/npm.3cad4cc65b85a602c6ac.svg",
+    "static/media/react.svg": "/20-React-React-Portfolio/static/media/react.3a03708e42481565259f.svg",
+    "main.6e116c4d.css.map": "/20-React-React-Portfolio/static/css/main.6e116c4d.css.map",
+    "main.283eef8b.js.map": "/20-React-React-Portfolio/static/js/main.283eef8b.js.map"
   },
   "entrypoints": [
-    "static/css/main.5a33d085.css",
-    "static/js/main.59b1444d.js"
+    "static/css/main.6e116c4d.css",
+    "static/js/main.283eef8b.js"
   ]
 }
